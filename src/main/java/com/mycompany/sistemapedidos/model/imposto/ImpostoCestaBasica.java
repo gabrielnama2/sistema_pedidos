@@ -1,15 +1,15 @@
-package com.mycompany.sistemapedidos.model.desconto;
+package com.mycompany.sistemapedidos.model.imposto;
 
-public class DescontoProduto extends Desconto{
+public class ImpostoCestaBasica {
     private String nome;
     private double porcentagem;
     
-    public DescontoProduto(String nome, double porcentagem) {
+    public ImpostoCestaBasica(String nome, double porcentagem) {
         this.nome = nome;
         this.porcentagem = porcentagem;
     }
     
-    //GETS E SETS
+    //GETS
     public String getNome() {
         return nome;
     }
@@ -17,5 +17,4 @@ public class DescontoProduto extends Desconto{
     public double getPorcentagem() {
         return porcentagem;
     }
-    
 }

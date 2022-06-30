@@ -10,6 +10,7 @@ public class Pedido {
     public Pedido(int id, Cliente cliente, Produto produto, int qtd, String data) {
         this.id = id+1;
         this.qtd = qtd;
+        produto.retiraEstoque(qtd);
         this.data = data;
         this.processar(cliente, produto, qtd);
     }

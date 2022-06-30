@@ -10,22 +10,12 @@ public class Cliente {
         this.UF = UF;
     }
     
-    //GETS E SETS
+    //GETS
     public String getNome() {
         return nome;
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+    
     public String getUF() {
         return UF;
     }
-
-    public void setUF(String UF) {
-        this.UF = UF;
-    }
-    
-    
 }
