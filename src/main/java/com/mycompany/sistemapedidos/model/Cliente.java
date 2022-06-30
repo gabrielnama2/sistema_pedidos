@@ -1,16 +1,16 @@
 package com.mycompany.sistemapedidos.model;
-import com.mycompany.sistemapedidos.model.desconto.DescontoCategoria;
 
-public class Categoria {
+public class Cliente {
     private String nome;
+    private String UF;
     
     //CONSTRUTOR
-    public Categoria(String nome) {
+    public Cliente(String nome, String UF) {
         this.nome = nome;
-        DescontoCategoria desconto = new DescontoCategoria();
-        
+        this.UF = UF;
     }
-
+    
+    //GETS E SETS
     public String getNome() {
         return nome;
     }
@@ -18,5 +18,14 @@ public class Categoria {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getUF() {
+        return UF;
+    }
+
+    public void setUF(String UF) {
+        this.UF = UF;
+    }
+    
     
 }
