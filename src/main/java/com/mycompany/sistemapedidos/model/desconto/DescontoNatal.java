@@ -4,12 +4,13 @@ public class DescontoNatal extends Desconto{
     private String nome;
     private double porcentagem;
     
+    //CONSTRUTOR
     public DescontoNatal(String nome, double porcentagem) {
         this.nome = nome;
         this.porcentagem = porcentagem;
     }
     
-    //GETS E SETS
+    //GETS
     public String getNome() {
         return nome;
     }

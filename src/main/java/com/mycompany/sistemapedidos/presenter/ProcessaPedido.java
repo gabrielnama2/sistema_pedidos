@@ -2,13 +2,10 @@ package com.mycompany.sistemapedidos.presenter;
 import com.mycompany.sistemapedidos.model.Cliente;
 import com.mycompany.sistemapedidos.model.Pedido;
 import com.mycompany.sistemapedidos.model.Produto;
-import com.mycompany.sistemapedidos.model.desconto.ProcessaDesconto;
-import com.mycompany.sistemapedidos.model.imposto.ProcessaImposto;
 
 public class ProcessaPedido {
     private double desconto;
     private double imposto;
-    private double valorTarifas;
     private double valorTotal;
     private double valorPagar;
     

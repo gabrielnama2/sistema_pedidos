@@ -4,6 +4,7 @@ public class ImpostoISS {
     private String nome;
     private double porcentagem;
     
+    //CONSTRUTOR
     public ImpostoISS(String nome, double porcentagem) {
         this.nome = nome;
         this.porcentagem = porcentagem;

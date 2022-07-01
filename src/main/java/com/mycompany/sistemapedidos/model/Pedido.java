@@ -19,29 +19,18 @@ public class Pedido {
         ProcessaPedido processa = new ProcessaPedido(this, cliente, produto);
     }
     
-    //GETS E SETS
+    //GETS
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getQtd() {
         return qtd;
     }
-    
-    public void setQtd(int qtd) {    
-        this.qtd = qtd;
-    }
 
     public String getData() {
         return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
     }
     
 }

@@ -4,12 +4,13 @@ public class ImpostoICMS {
     private String nome;
     private double porcentagem;
     
+    //CONSTRUTOR
     public ImpostoICMS(String nome, double porcentagem) {
         this.nome = nome;
         this.porcentagem = porcentagem;
     }
     
-    //GETS E SETS
+    //GETS
     public String getNome() {
         return nome;
     }

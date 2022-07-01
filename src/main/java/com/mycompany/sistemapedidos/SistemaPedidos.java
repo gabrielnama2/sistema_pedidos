@@ -10,7 +10,7 @@ public class SistemaPedidos {
         //CLIENTES
         Cliente gabriel = new Cliente("Gabriel", "MG");
         Cliente rafael = new Cliente("Rafael", "ES");
-        Cliente keyla = new Cliente("Keila", "ES");
+        Cliente keila = new Cliente("Keila", "ES");
         
         //CATEGORIAS
         Categoria papelaria = new Categoria("Papelaria");
@@ -26,6 +26,6 @@ public class SistemaPedidos {
         //PEDIDOS
         Pedido pedido01 = new Pedido(0, gabriel, lapis, 10, "Natal");
         Pedido pedido02 = new Pedido(1, rafael, caneta, 5, "01/07/2022");
-        Pedido pedido03 = new Pedido(2, keyla, kitEscolar, 7, "02/07/2022");
+        Pedido pedido03 = new Pedido(2, keila, kitEscolar, 7, "02/07/2022");
     }
 }
