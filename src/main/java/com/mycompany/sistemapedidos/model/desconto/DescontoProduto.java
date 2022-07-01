@@ -9,7 +9,7 @@ public class DescontoProduto extends Desconto{
         this.porcentagem = porcentagem;
     }
     
-    //GETS E SETS
+    //GETS
     public String getNome() {
         return nome;
     }

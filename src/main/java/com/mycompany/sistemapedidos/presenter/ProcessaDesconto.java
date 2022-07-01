@@ -1,6 +1,9 @@
-package com.mycompany.sistemapedidos.model.desconto;
+package com.mycompany.sistemapedidos.presenter;
 import com.mycompany.sistemapedidos.model.Pedido;
 import com.mycompany.sistemapedidos.model.Produto;
+import com.mycompany.sistemapedidos.model.desconto.DescontoCategoria;
+import com.mycompany.sistemapedidos.model.desconto.DescontoNatal;
+import com.mycompany.sistemapedidos.model.desconto.DescontoProduto;
 
 public class ProcessaDesconto {
     private double desconto;
@@ -9,11 +12,11 @@ public class ProcessaDesconto {
     DescontoProduto descontoProduto = new DescontoProduto("Lapis", 0.005);
     
     //CONSTRUTOR
-    public ProcessaDesconto(Pedido pedido ,Produto produto){
+    public ProcessaDesconto(Pedido pedido, Produto produto){
         this.processar(pedido, produto);
     }
     //PROCESSA OS DESCONTOS DO PEDIDO
-    public double processar(Pedido pedido ,Produto produto){
+    public double processar(Pedido pedido, Produto produto){
         this.desconto = 0;
         if(pedido.getData() == "Natal"){
             this.desconto = this.desconto + descontoNatal.getPorcentagem();
